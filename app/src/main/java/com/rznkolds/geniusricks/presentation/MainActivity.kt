@@ -8,6 +8,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -72,12 +73,15 @@ fun GetCharacterScreen(
 
         this.characters?.let { v ->
 
-            LazyColumn {
+            LazyColumn(
+                verticalArrangement = Arrangement.spacedBy(6.dp),
+                contentPadding = PaddingValues(6.dp)
+            ) {
 
                 items(v) {
 
-                    Card(
-                        Modifier.fillMaxWidth().padding(4.dp),
+                    Card (
+                        modifier = Modifier.fillMaxWidth()
                     ) {
                         Row(verticalAlignment = Alignment.CenterVertically) {
 
@@ -90,8 +94,8 @@ fun GetCharacterScreen(
                                     }
                                 ),
                                 modifier = Modifier
-                                    .height(100.dp)
-                                    .width(100.dp)
+                                    .height(120.dp)
+                                    .width(120.dp)
                                     .padding(10.dp)
                                     .fillMaxWidth()
                                     .clip(
