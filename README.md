@@ -2,9 +2,9 @@
 
 ## Project explanation
 
-This project saves your steps, calories burned and mileage calculation of steps taken on the local server, allowing you to monitor weekly without transmitting your data to the outside and lead a healthy life.
+With this project, you can take a look at how the Apollo and Kotlin coin libraries are used together.
 
-You can examine this project thanks to its open source structure and learn where and how the data is kept.
+Thanks to the MVVM and Clean architecture structure of the project, you can understand the entire plot in order.
 
 ## Project features
  - Jetpack
