@@ -1,7 +1,5 @@
 # GeniusRicks
 
-## Project explanation
-
 With this project, you can take a look at how the Apollo and Kotlin coin libraries are used together.
 
 Thanks to the MVVM and Clean architecture structure of the project, you can understand the entire plot in order.
